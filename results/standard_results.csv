@@ -1,0 +1,2 @@
+model,seed,epochs,batch_size,lr,weight_decay,best_val_loss,best_val_acc,test_loss,test_acc
+StandardCNN,42,40,64,0.01,4e-05,2.6189301668167113,0.4518,2.5529336608886717,0.4592

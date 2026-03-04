@@ -19,7 +19,9 @@ from models import MobileNet
 from utils import get_device, build_criterion, build_optimizer
 from engine import train_one_epoch, evaluate_one_epoch
 
-
+def fmt(x):
+    return str(x).replace(".", "p")
+    
 def save_result(csv_path, row):
     df = pd.DataFrame([row])
     if os.path.exists(csv_path):

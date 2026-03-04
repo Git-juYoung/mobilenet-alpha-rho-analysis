@@ -4,7 +4,8 @@ import matplotlib.pyplot as plt
 
 
 def main():
-    results_dir = Path("results")
+    project_root = Path(__file__).resolve().parents[1]
+    results_dir = project_root / "results"
     mn_path = results_dir / "mobilenet_results.csv"
     sc_path = results_dir / "standard_results.csv"
 

@@ -9,7 +9,7 @@ model/
 *.pth
 
 # Experiment outputs
-results/
+results/*.txt
 
 # Python cache
 __pycache__/
