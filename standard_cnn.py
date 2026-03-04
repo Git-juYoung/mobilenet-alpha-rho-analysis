@@ -58,7 +58,8 @@ def main():
         pin_memory=config["pin_memory"],
     )
 
-    model = StandardCNN(num_classes=200).to(device)
+    num_classes = len(train_set.classes)
+    model = StandardCNN(num_classes=num_classes).to(device)
     criterion = build_criterion()
     optimizer = build_optimizer(
         model,

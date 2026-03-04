@@ -63,7 +63,8 @@ def main():
                 pin_memory=config["pin_memory"],
             )
 
-            model = MobileNet(alpha=a, num_classes=200).to(device)
+            num_classes = len(train_set.classes)
+            model = MobileNet(alpha=a, num_classes=num_classes).to(device)
             criterion = build_criterion()
             optimizer = build_optimizer(
                 model,
