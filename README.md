@@ -305,7 +305,7 @@ dataset
 ## 6.2 Compute vs Accuracy Visualization
 
 <p align="center">
-  <img src="analysis/assets/pareto_plot.png" width="60%">
+  <img src="analysis/assets/pareto_with_standard.png" width="60%">
 </p>
 
 그래프는 compute 감소에 따라 accuracy가 점진적으로 감소하는 경향을 보여준다.
